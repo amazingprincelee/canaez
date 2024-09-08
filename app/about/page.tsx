@@ -11,13 +11,10 @@ export default function About() {
       <section id="about" className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">About Us</h2>
-
         </div>
 
         <CardWithSideImage />
       </section>
-
-
 
       {/* Vision, Mission & Core Values */}
       <section className="py-16 bg-gray-100">
@@ -32,7 +29,7 @@ export default function About() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-lg md:text-xl font-semibold text-blue-600 mb-4">Our Mission</h3>
             <p className="text-gray-600">
-              To analyze, monitor, and improve our customers' present and future needs for high-quality services & products.
+              To analyze, monitor, and improve our customers&#39; present and future needs for high-quality services and products.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -72,32 +69,32 @@ export default function About() {
       </section>
 
       <section>
-      <SectionHeader 
-      title="Our Services"
-      />
-     <CardSection
-        data={servicesData}
-        renderCard={(service, index) => (
-          <div key={index} className="card">
-            <img src={service.imageSrc} alt={service.title} />
-            <h3 className="font-roboto font-bold text-xl m-3">{service.title}</h3>
-            <p className="mb-4">{service.description}</p>
-            <button className="btn text-white bg-blue-700 hover:bg-blue-800">View Details</button>
-          </div>
-        )} title={""}      />
-     <CardSection
-        data={servicesData2}
-        renderCard={(service, index) => (
-          <div key={index} className="card">
-            <img src={service.imageSrc} alt={service.title} />
-            <h3 className="font-roboto font-bold text-xl m-3">{service.title}</h3>
-            <p >{service.description}</p>
-            <button className="btn text-white bg-blue-700 hover:bg-blue-800">View Details</button>
-          </div>
-        )} title={""}      />
+        <SectionHeader title="Our Services" />
+        <CardSection
+          data={servicesData}
+          renderCard={(service, index) => (
+            <div key={index} className="card">
+              <img src={service.imageSrc} alt={service.title} />
+              <h3 className="font-roboto font-bold text-xl m-3">{service.title}</h3>
+              <p className="mb-4">{service.description}</p>
+              <button className="btn text-white bg-blue-700 hover:bg-blue-800">View Details</button>
+            </div>
+          )}
+          title=""
+        />
+        <CardSection
+          data={servicesData2}
+          renderCard={(service, index) => (
+            <div key={index} className="card">
+              <img src={service.imageSrc} alt={service.title} />
+              <h3 className="font-roboto font-bold text-xl m-3">{service.title}</h3>
+              <p>{service.description}</p>
+              <button className="btn text-white bg-blue-700 hover:bg-blue-800">View Details</button>
+            </div>
+          )}
+          title=""
+        />
       </section>
-
-      
     </div>
   );
 }
