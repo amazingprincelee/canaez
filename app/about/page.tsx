@@ -1,5 +1,5 @@
 import { servicesData, servicesData2 } from '@/data/pageData';
-import Image from 'next/image';
+
 import CardSection from '../components/CardSection';
 import SectionHeader from '../components/SectionHeader';
 import CardWithSideImage from '../components/CardWithSideImage';
@@ -7,7 +7,6 @@ import CardWithSideImage from '../components/CardWithSideImage';
 export default function About() {
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* About Us */}
       <section id="about" className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">About Us</h2>
@@ -46,7 +45,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* HSE & Quality Policy */}
+      
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
