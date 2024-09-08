@@ -1,4 +1,8 @@
+import { servicesData, servicesData2 } from '@/data/pageData';
 import Image from 'next/image';
+import CardSection from '../components/CardSection';
+import SectionHeader from '../components/SectionHeader';
+import CardWithSideImage from '../components/CardWithSideImage';
 
 export default function About() {
   return (
@@ -7,15 +11,13 @@ export default function About() {
       <section id="about" className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">About Us</h2>
-          <p className="text-gray-600 leading-loose mb-8">
-            Canaez Nigeria Limited is a world-class engineering service provider dedicated to technical leadership,
-            consistency, integrity, and capacity building through a continual improvement approach.
-          </p>
-          <div className="w-full">
-            <Image src="/about-us.jpg" alt="About Us Image" width={800} height={500} className="rounded-lg shadow-md w-full h-auto" />
-          </div>
+
         </div>
+
+        <CardWithSideImage />
       </section>
+
+
 
       {/* Vision, Mission & Core Values */}
       <section className="py-16 bg-gray-100">
@@ -69,42 +71,33 @@ export default function About() {
         </div>
       </section>
 
-      {/* Services */}
-      <section id="services" className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <Image src="/consultancy.jpg" alt="Consultancy Services" width={400} height={300} className="rounded-lg w-full h-auto" />
-              <h3 className="text-lg md:text-xl font-semibold text-blue-600 mt-4">Consultancy Services</h3>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <Image src="/drilling.jpg" alt="Drilling Instrumentation" width={400} height={300} className="rounded-lg w-full h-auto" />
-              <h3 className="text-lg md:text-xl font-semibold text-blue-600 mt-4">Drilling Instrumentation</h3>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <Image src="/automation.jpg" alt="Automation Designs and Systems" width={400} height={300} className="rounded-lg w-full h-auto" />
-              <h3 className="text-lg md:text-xl font-semibold text-blue-600 mt-4">Automation Designs & Systems</h3>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <Image src="/cctv.jpg" alt="CCTV/Surveillance Systems" width={400} height={300} className="rounded-lg w-full h-auto" />
-              <h3 className="text-lg md:text-xl font-semibold text-blue-600 mt-4">CCTV/Surveillance Systems</h3>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <Image src="/control.jpg" alt="Control & Instrumentation" width={400} height={300} className="rounded-lg w-full h-auto" />
-              <h3 className="text-lg md:text-xl font-semibold text-blue-600 mt-4">Control & Instrumentation</h3>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <Image src="/training.jpg" alt="Training and Development" width={400} height={300} className="rounded-lg w-full h-auto" />
-              <h3 className="text-lg md:text-xl font-semibold text-blue-600 mt-4">Training & Development</h3>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <Image src="/representatives.jpg" alt="Manufacturer Representatives" width={400} height={300} className="rounded-lg w-full h-auto" />
-              <h3 className="text-lg md:text-xl font-semibold text-blue-600 mt-4">Manufacturer Representatives</h3>
-            </div>
+      <section>
+      <SectionHeader 
+      title="Our Services"
+      />
+     <CardSection
+        data={servicesData}
+        renderCard={(service, index) => (
+          <div key={index} className="card">
+            <img src={service.imageSrc} alt={service.title} />
+            <h3 className="font-roboto font-bold text-xl m-3">{service.title}</h3>
+            <p className="mb-4">{service.description}</p>
+            <button className="btn text-white bg-blue-700 hover:bg-blue-800">View Details</button>
           </div>
-        </div>
+        )} title={""}      />
+     <CardSection
+        data={servicesData2}
+        renderCard={(service, index) => (
+          <div key={index} className="card">
+            <img src={service.imageSrc} alt={service.title} />
+            <h3 className="font-roboto font-bold text-xl m-3">{service.title}</h3>
+            <p >{service.description}</p>
+            <button className="btn text-white bg-blue-700 hover:bg-blue-800">View Details</button>
+          </div>
+        )} title={""}      />
       </section>
+
+      
     </div>
   );
 }
