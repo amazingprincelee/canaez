@@ -4,6 +4,7 @@ import SectionHeader from "./SectionHeader";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { div } from "framer-motion/client";
 
 const PartnersTestimonials = () => {
   // Slider settings
@@ -53,7 +54,7 @@ const PartnersTestimonials = () => {
               {/* Testimonial 1 */}
               <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
                 <p className="italic text-gray-600">
-                  "It was an awesome pleasure doing business with Canaez Group.... training and development process was well delivered."
+                  It was an awesome pleasure doing business with Canaez Group.... training and development process was well delivered.
                 </p>
                 <div className="mt-4 flex items-center">
                   <img
@@ -71,7 +72,7 @@ const PartnersTestimonials = () => {
               {/* Testimonial 2 */}
               <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
                 <p className="italic text-gray-600">
-                  "Equipment procurement process with Canaez Group was excellent and delivered timely without issues."
+                  Equipment procurement process with Canaez Group was excellent and delivered timely without issues.
                 </p>
                 <div className="mt-4 flex items-center">
                   <img
@@ -89,7 +90,7 @@ const PartnersTestimonials = () => {
               {/* Testimonial 3 */}
               <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
                 <p className="italic text-gray-600">
-                  "CCTV Surveillance system installation by Canaez Group was simply Top-Notch."
+                  CCTV Surveillance system installation by Canaez Group was simply Top-Notch.
                 </p>
                 <div className="mt-4 flex items-center">
                   <img
@@ -107,7 +108,7 @@ const PartnersTestimonials = () => {
               {/* Testimonial 4 */}
               <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
                 <p className="italic text-gray-600">
-                  "Their customer support was responsive and provided excellent solutions for our queries."
+                  Their customer support was responsive and provided excellent solutions for our queries.
                 </p>
                 <div className="mt-4 flex items-center">
                   <img
@@ -125,7 +126,7 @@ const PartnersTestimonials = () => {
               {/* Testimonial 5 */}
               <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
                 <p className="italic text-gray-600">
-                  "Canaez Group’s expertise in oil & gas sector has been instrumental in achieving our project goals."
+                  Canaez Group expertise in oil & gas sector has been instrumental in achieving our project goals.
                 </p>
                 <div className="mt-4 flex items-center">
                   <img
