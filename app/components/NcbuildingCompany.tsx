@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import { SiAffinitydesigner } from 'react-icons/si';
-import { FaPeopleGroup, FaTruck, FaBox } from 'react-icons/fa6';
+import React, { useEffect, useRef } from "react";
+import { SiAffinitydesigner } from "react-icons/si";
+import { FaPeopleGroup, FaTruck, FaBox } from "react-icons/fa6";
 
 const NCBuildingCompany = () => {
   const carouselRef = useRef<HTMLDivElement | null>(null);
@@ -17,7 +17,7 @@ const NCBuildingCompany = () => {
 
         if (carouselRef.current) {
           carouselRef.current.style.transform = `translateX(${offset}%)`;
-          carouselRef.current.style.transition = 'transform 0.5s ease-in-out';
+          carouselRef.current.style.transition = "transform 0.5s ease-in-out";
         }
       }, 3000); // Change slide every 3 seconds
     }
@@ -37,10 +37,13 @@ const NCBuildingCompany = () => {
     <div className="container mx-auto p-4">
       <div className="flex flex-col lg:flex-row items-center justify-between bg-white p-8">
         <div className="lg:w-1/2">
-          <h1 className="text-3xl lg:text-4xl font-bold text-gray-800">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
             NC ROYAL BUILDING COMPANY
           </h1>
-          <p className="text-gray-600 text-sm mt-2">(A Division of Canaez Nig. Limited)</p>
+
+          <p className="text-gray-600 text-sm mt-2">
+            (A Division of Canaez Nig. Limited)
+          </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
             <div className="flex items-start">
@@ -48,8 +51,12 @@ const NCBuildingCompany = () => {
                 <SiAffinitydesigner size={30} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold text-gray-800">Architectural Designs</h3>
-                <p className="text-gray-600 text-sm">Building Constructions & Merchants</p>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Architectural Designs
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Building Constructions & Merchants
+                </p>
               </div>
             </div>
 
@@ -58,8 +65,12 @@ const NCBuildingCompany = () => {
                 <FaBox size={30} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold text-gray-800">Project Management</h3>
-                <p className="text-gray-600 text-sm">Tendering & Project Control</p>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Project Management
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Tendering & Project Control
+                </p>
               </div>
             </div>
 
@@ -68,8 +79,12 @@ const NCBuildingCompany = () => {
                 <FaTruck size={30} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold text-gray-800">Procurement & Logistics</h3>
-                <p className="text-gray-600 text-sm">Purchase, Delivery and Installation</p>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Procurement & Logistics
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Purchase, Delivery and Installation
+                </p>
               </div>
             </div>
 
@@ -78,8 +93,12 @@ const NCBuildingCompany = () => {
                 <FaPeopleGroup size={30} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold text-gray-800">Clientele Representatives</h3>
-                <p className="text-gray-600 text-sm">Manufacturer Representatives</p>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Clientele Representatives
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Manufacturer Representatives
+                </p>
               </div>
             </div>
           </div>
@@ -87,10 +106,7 @@ const NCBuildingCompany = () => {
 
         {/* Image Slider */}
         <div className="lg:w-1/2 mt-8 lg:mt-0 overflow-hidden">
-          <div
-            ref={carouselRef}
-            className="flex w-full"
-          >
+          <div ref={carouselRef} className="flex w-full">
             <div className="w-full flex-shrink-0">
               <img
                 src="/images/nroyal/ny5-480x360.jpg"
