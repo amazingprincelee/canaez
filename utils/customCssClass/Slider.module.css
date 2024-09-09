@@ -1,0 +1,23 @@
+/* Slider.module.css */
+.slide {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.active .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+

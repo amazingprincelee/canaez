@@ -6,6 +6,7 @@ import CardSection from "./components/CardSection";
 import NCBuildingCompany from "./components/NcbuildingCompany";
 import PartnersAndTestimonials from "./components/PartnersAndTestimonials";
 import Services from "./components/Services";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
             <img src={service.imageSrc} alt={service.title} />
             <h3 className="font-roboto font-bold text-xl m-3">{service.title}</h3>
             <p className="mb-4">{service.description}</p>
-            <button className="btn text-white bg-blue-700 hover:bg-blue-800">View Details</button>
+            <button className="btn text-white bg-cyan-500 hover:bg-cyan-700">View Details</button>
           </div>
         )} title={""}      />
      <CardSection
@@ -32,7 +33,7 @@ export default function Home() {
             <img src={service.imageSrc} alt={service.title} />
             <h3 className="font-roboto font-bold text-xl m-3">{service.title}</h3>
             <p >{service.description}</p>
-            <button className="btn text-white bg-blue-700 hover:bg-blue-800">View Details</button>
+            <button className="btn text-white bg-cyan-500 hover:bg-cyan-700">View Details</button>
           </div>
         )} title={""}      />
         <NCBuildingCompany />
@@ -51,12 +52,12 @@ export default function Home() {
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <h3 className="font-roboto font-bold text-xl m-3">{news.title}</h3>
-              <p className="text-gray-500 text-sm">{news.date}</p>
-              <p className="mb-4">{news.description}</p>
+              <h3 className="font-roboto font-bold text-xl m-3 h-15 " >{news.title}</h3>
+              <p className="text-gray-500 text-sm mb-3">{news.date}</p>
+              <p className="m-4">{news.description}</p>
               <a
                 href={news.readMoreLink}
-                className="btn text-white bg-blue-700 hover:bg-blue-800"
+                className="btn text-white bg-cyan-500 hover:bg-cyan-800"
               >
                 Read more
               </a>
@@ -66,7 +67,7 @@ export default function Home() {
       />
 
       <Services />
-
+      <ScrollToTop />
     
 
     </main>

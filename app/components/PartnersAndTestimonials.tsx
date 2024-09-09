@@ -15,10 +15,29 @@ const PartnersTestimonials = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024, // Show only 1 slide at a time on tablets and small desktops
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Keep the same setting for tablets
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480, // Keep the same setting for mobile devices
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   const testimonials = [
-   
     {
       message: "Equipment procurement process with Canaez Group was excellent and delivered timely without issues.",
       name: "James Belon",

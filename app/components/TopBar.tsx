@@ -8,7 +8,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaMailBulk } from "react-icons/fa"
 const TopBar = () => {
   
   return (
-    <div className="bg-blue-600 text-white py-4">
+    <div className="bg-cyan-500 text-white py-4">
       <div className="container mx-auto p-4">
         <div className="container mx-auto flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:items-center md:justify-between">
           

@@ -27,12 +27,11 @@ const NavBar = () => {
       <div className="navbar bg-base-100">
         {/* Left: Brand */}
         <div className="navbar-start flex items-center">
-          <Link href="/" className="btn btn-ghost normal-case text-xl">
+          <Link href="/" className="btn btn-ghost normal-case text-xl m-0">
             <Image src="/canaez.png" alt="canaez logo" width={120} height={120} />
           </Link>
         </div>
 
-        {/* Right: Navigation Links, Search Input, and Menu */}
         <div className="navbar-end flex items-center space-x-4">
           {/* Navigation Links */}
           <div className="hidden lg:flex">

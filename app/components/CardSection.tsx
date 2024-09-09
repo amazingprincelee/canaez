@@ -9,9 +9,9 @@ interface CardSectionProps<T> {
 
 const CardSection = <T,>({ title, data, renderCard }: CardSectionProps<T>) => {
   return (
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto ">
       <h2 className="text-2xl font-bold text-center">{title}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid p-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {data.map((item, index) => renderCard(item, index))}
       </div>
     </div>

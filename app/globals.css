@@ -16,7 +16,7 @@
 
 .active-link {
   font-weight: bold;
- background-color: #2563EB;
+ background-color: #06b6d4;
  color: #ffffff;
 
 }
@@ -30,6 +30,17 @@
 body {
   color: rgb(var(--foreground-rgb));
   
+}
+
+
+
+/* Add this to your CSS if you want to customize */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 

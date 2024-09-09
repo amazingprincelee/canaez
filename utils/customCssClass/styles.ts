@@ -1,4 +1,3 @@
 export const marginContainer = {
-    margin: '20px',
-   
+  margin: '20px',
 }
