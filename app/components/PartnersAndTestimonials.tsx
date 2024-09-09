@@ -68,7 +68,7 @@ const PartnersTestimonials = () => {
     <div className="bg-gray-100">
       <div className="container mx-auto px-4 py-10">
         <SectionHeader title="Our Partners" />
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 p-4">
           <p className="text-lg text-gray-500">Professional Services Guaranteed</p>
           <div className="flex justify-center items-center mt-6">
             <Image
